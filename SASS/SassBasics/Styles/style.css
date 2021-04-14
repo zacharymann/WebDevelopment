@@ -1,0 +1,43 @@
+.second h1, .second h2 {
+  color: blue;
+  border: 3px solid purple;
+}
+
+.first {
+  background: blue;
+  font-weight: bold;
+}
+
+.first h1 {
+  color: white;
+}
+
+.first h1:hover {
+  color: #4cbb17;
+}
+
+.first p {
+  color: #4cbb17;
+  border: 3px solid #4cbb17;
+}
+
+.second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.second h1 {
+  font-weight: bold;
+}
+
+.second h2 {
+  font-style: italic;
+}
+/*# sourceMappingURL=style.css.map */

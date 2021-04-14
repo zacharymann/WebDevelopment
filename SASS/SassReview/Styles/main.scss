@@ -1,0 +1,39 @@
+// SASS REVIEW
+
+// Importing PARTIAL file
+@import "values";
+
+.eighties{
+    background: blue;
+    font-weight: bold;
+
+    // MIXIN
+    @include flex(space-between, flex-end)
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: flex-end;
+  
+    // NESTING
+    h1 {
+        color: white;
+    }
+    ul {
+        // border: 3px solid #d92121;
+        border: 3px solid $color1;
+        // color: #d92121;
+        color: $color1;
+    }
+}
+
+.nineties {
+    @include flex (flex-end, center);
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    ul {
+        // EXTENDABLE CLASS
+        @extend %colors;
+    }
+}

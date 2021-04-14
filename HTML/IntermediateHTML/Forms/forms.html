@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <!-- Action is where the info is being sent or retrieved from (Example: A Web Address) -->
+    <!-- Method determines whether it will be sending ot retrieving data (Example:GET would retrieve data, POST would send) -->
+    <form action="www.espn.com" method="GET/POST"></form>
+
+    <!-- Input tags do not have a closing tag (AKA self closing tag/element) and they use the type attribute to determine the type of input -->
+    <!-- <input> -->
+
+    <h1>Login</h1>
+    <!-- Form Tags/elements are block level elements -->
+    <form>
+        <!-- Name attribute is used to send info from inputs to a destination -->
+        <input name="login" type="text" placeholder="username">
+        <input name="login" type="password" placeholder="password">
+        <!-- Submit input in a form will submit calues in a form -->
+        <input name="login" type="submit">
+    </form>
+
+    <!-- LABELS -->
+
+    <!-- Labels are used with inputs to notify the user what the input is for-->
+    <label for=""></label>
+
+    <!-- Line break -->
+    <br>
+
+    <!-- First way to use a label -->
+    <!-- Nesting an input inside of a label will link two together -->
+
+    <label>
+        <form>First Name
+            <input type="text">
+            <br>
+            <!-- Second way to use the label -->
+            <!-- The "for" and "id" attributess are used to link/bind labels and inputs -->
+            <label for="fullname">Full Name</label>
+            <!-- The required attribute requires user to complete input field before form will be sent -->
+            <input type="text" id="" fullname required>
+            <input type="submit">
+        </form>
+
+        <hr>
+        <h2>Other Inputs</h2>
+
+        <form>
+            <label for="userEmail">Email</label>
+            <input type="email" id="userEmail" required>
+            <!-- Checbox Input -->
+            <label for="userCheckbox">Checkbox</label>
+            <input type="checkbox" id="userCheckbox" required>
+            <br>
+            <!-- Radio Input -->
+            <!-- Must link radio inputs together with name attribute -->
+            <label for="userRadioOne">Radio Option 1</label>
+            <input type="radio" id="userRadioOne" name="radioLink">
+            <label for="userRadioTwo">Radio Option 2</label>
+            <input type="radio" id="userRadioTwo" name="radioLink">
+    </label>
+    <br>
+    <!-- Color Input -->
+    <label for="">
+        Color
+        <input type="color">
+    </label>
+    <br>
+    <!-- Number Input -->
+    <!-- The value attribute is used to have a preset value -->
+    <label>
+        Number
+        <input type="number" value="1">
+    </label>
+    <br>
+    <!-- Date input -->
+    <label>
+        <input type="date" value="2021-01-25">
+    </label>
+    <br>
+    <!-- Submit Input -->
+    <input type="submit">
+    </form>
+
+    <body>
+    </body>
+
+</html>

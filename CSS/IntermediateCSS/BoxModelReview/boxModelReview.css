@@ -1,0 +1,44 @@
+*{
+    /* removes all padding and margin on all elements */
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+}
+
+.red {
+    background: red;
+    /* Background color-image of an element is included in padding */
+    padding: 30px;
+    border: 40px solid blue;
+    margin: 50px;
+  
+    /* Width and height determine the size of the elements content */
+    width: 250px;
+    height: 250px;
+  
+    /* Unlike inline, inline-block allows a width and height to be set on the element. Also, the top and bottom margins/paddings are respected */
+    display: inline-block
+    /* display: block; */
+    /* display: inline; */
+
+    /* The box-sizing: border-box style allows us to include the padding and border in an element's width and height. content-box is the default value for box-sizing. */
+    box-sizing: border-box;
+  }
+  
+  .green {
+    background: green;
+    padding: 30px;
+    border: 40px solid blue;
+    width: 250px;
+    height: 250px;
+  
+    /* Elements collapse/share the vertical space between them. It will use the larger margin value */
+    margin: 50px;
+    /* margin: 10px; */
+    /* margin: 100px; */
+  
+    display: inline-block;
+    /* display: block; */
+    /* display: inline; */
+  }
+  

@@ -1,0 +1,99 @@
+/* ELEMENT SELECTOR */
+/* Applies style to every element of specified type (Every h3 in this case) */
+h3{
+    color: red;
+}
+
+/* CLASS SELECTOR */
+/* Applies style to every element with the specified class */
+.hobbit{
+    border-top: 5px solid blue;
+}
+
+.lotr {
+    border-top: 5px solid green;
+}
+
+/* ID SELECTOR */
+/* Applies style to the single element with the specified ID (IDs are meant to only be used on a single element */
+#towers {
+    border-left: 5px solid brown;
+}
+
+/* NOT SELECTORS */
+.hobbit:not(#armies) {
+    border-top: 5px solid blue;
+}
+
+/* STAR SELECTOR */
+/* Sets style for every element in HTML file */
+*{
+    border-right: 5px solid yellow;
+}
+
+/* MULTIPLE SELECTORS */
+/* Sets the style for multiple selectors at once */
+h1, h4, .hobbit{
+    background: tomato;
+}
+
+/* ATTRIBUTE SELECTOR */
+a[target="_blank"] {
+    border-top: 5px dashed red;
+}
+/* DESCENDENT SELECTOR */
+/* Sets style for selector (last specified slector) nested in another selector(s) (1st specified). Even if they are nested more than one level */
+div h2 {
+    color: green;
+}
+
+ol ul .lotr{
+    border-bottom: 5px dotted purple;
+}
+
+/* SPECIFIC ELEMENT WITH A CLASS */
+/* Sets style for onley a specific element that has a class */
+h3.lotr {
+    border-bottom: 5px dashed blue;
+}
+
+/* GENERAL SIBLING SELECTOR */
+h3 ~ ol {
+    border-left: 5px dashed burlywood;
+}
+
+/* ADJACENT SIBLING SELECTOR */
+/* Same as general sibling selector, however, it will only affect the element immediately following the specified element */
+h3 + ol {
+    border-bottom: 5px dashed  gold;
+}
+
+/* NTH OF TYPE */
+/* Styles every element that is a specified nth child (Number you provide) of a specified type (Selector you provide) of it's parent */
+li:nth-of-type(6) {
+    color: blue;
+}
+
+div:nth-of-type(1) {
+    border: 5px solid blue;
+}
+
+/* NTH OF CHILD */
+/* Styles all elements that are the nth child (Number you provide) of the parent. Regardless of type */
+ul:nth-child(2){
+    background-color: yellow;
+}
+
+/* CHILD SELECTOR */
+/* Styles all elements (2nd selector you provide) that are children of specified selector (1st selector you provide) */
+div > h2
+{
+    border-bottom: 5px dashed  green;
+}
+
+/* PSUEDO CLASS */
+/* When element is hovered over with cursor the style is applied */
+
+li:hover{
+    background: black;
+}

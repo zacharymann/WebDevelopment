@@ -1,0 +1,40 @@
+.nineties ul {
+  color: #ed1c24;
+  border: 3px solid #8fd129;
+}
+
+.eighties {
+  background: blue;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.eighties h1 {
+  color: white;
+}
+
+.eighties ul {
+  border: 3px solid #d92121;
+  color: #d92121;
+}
+
+.nineties {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=main.css.map */

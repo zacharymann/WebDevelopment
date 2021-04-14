@@ -1,0 +1,59 @@
+/* Colr Name */
+h1 {
+    color: papayawhip;
+}
+
+/* Hexadecimal */
+/* Hexadecimal number/character goes from zero to the letter F */
+/* # + 6 hexadecimal numbers/characters */
+/* 0123456789ABCDEF */
+/* example: #09BF23 */
+
+/* First two determine the amount of red */
+/* First two determine the amount of green */
+/* First two determine the amount of blue */
+
+/* Colors work as if they are lights not paints */
+/* #FFFFFF */
+/* #000000 would be black */
+
+h1{
+    /* This color is green */
+    color: #00ff00;
+}
+h1{
+    /* This color is blue */
+    color: #0000ff;
+}
+h1{
+    /* This color is white */
+    color: #ffffff;
+}
+h1{
+    /* This color is #000000 */
+    color: #000;
+}
+
+/* Shorthand Way to write a hexidecimal ( First two must match, as well as as second two, etc */
+h1{
+    /* color: #1155CC; */
+    color: #15c;
+}
+
+/* RGB (Red, Green, Blue) */
+
+/* Example: rgb(0, 14, 255) */
+/* RGB has three channels/spots */
+/* rgb(#, #, #) */
+h1{
+    color: rgb(255, 0, 0);
+}
+
+/* RGBA (Red, Green, Blue, Alpha) */
+/* rgba(12, 17, 84, 0.4 */
+/* Alpha goes from 0-1 */
+h1{
+    /* Setting the alpha to zero will make the element disappear. (Fully transparent) setting it to one will make it NOT transparent */
+    color: rgba(0, 0, 255, .5);
+}
+

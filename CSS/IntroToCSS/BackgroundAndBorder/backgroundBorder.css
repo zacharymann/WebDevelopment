@@ -1,0 +1,39 @@
+h1{
+    color: rgb(76, 187, 23);
+}
+
+/* BACKGROUND */
+/* Sets the entire window to the #ffa500 color */
+/* body{
+    background: #ffa500
+} */
+
+body{
+    background: #ffa500;
+}
+body {
+    /* Images can also be used as backgrounds. TO use a url link to an image the "url()" must be used */
+    /* background: url(https://images.unsplash.com/photo-1518005068251-37900150dfca?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80): cover;
+ */
+ background: url("ireland.jpg");
+ /* Stops image from tiling across the screen */
+ background-repeat: no-repeat;
+ /* Stretches image to cover screen */
+ background-size: cover;
+}
+
+/* Border */
+
+/* Borders in CSS have three different values to set (width, style, and color) */
+
+h2{
+    /* border-width: 7px;
+    border-style: solid;
+    border-color: orange; */
+
+    border: 7px solid   orange;
+}
+div{
+    border: 5px dashed blue;
+    background: red;
+}

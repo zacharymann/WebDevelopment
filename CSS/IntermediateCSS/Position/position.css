@@ -1,0 +1,63 @@
+div {
+    font-size: 50px;
+    padding: 20px;
+  }
+  .container {
+    background: gray;
+    margin: 20px;
+    /* For Absolute positioning of child elements */
+    /* position: relative; */
+  }
+  .red {
+    background: red;
+    /* Static is the default position property */
+    /* position: static; */
+  
+    /* Relative allows us to move the element relative to its normal position with top, right, bottom, and left properties */
+
+    /* position: relative;
+    top: 50px;
+    left: 50px; */
+  
+    /* Absolute completely removes the element from the document flow, but still displays element on screen */
+    /* When an element has an absolute position value it will position itself relative to the first parent element with a position value other than static. Must include top, right, bottom, or left for the absolute location to take affect */
+
+    /* position: absolute; */
+    /* left: 0; */
+    /* right: 0; */
+    /* top: 0; */
+    /* bottom: 0; */
+  
+      /* Fixed like absolute also completely removes the element from the document flow. However, unlike absolute it will always position itself relative to the root element of the page (AKA HTML element). Also, fixed will force the element to remain in same location as you scroll */
+
+    /* position: fixed; */
+    /* right: 0; */
+    /* bottom: 0; */
+    
+    /* Sticky is like a combination of relative and fixed. When the element hits the top of the screen as you scroll it becomes a fixed position and will stick to the top. Also, an element with a position of sticky only is fixed positioned inside of it's parent element */
+
+    /* position: sticky; */
+    /* top: 0; */
+
+  }
+  .green {
+    background: green;
+  }
+  .blue {
+    background: blue;
+  }
+  .yellow {
+    background: yellow;
+    position: absolute;
+    z-index: 4;
+  }
+  .purple {
+    background: purple;
+    position: absolute;
+    z-index: 3;
+  }
+  .orange {
+    background: orange;
+    /* position: sticky; */
+    /* top: 0; */
+  }

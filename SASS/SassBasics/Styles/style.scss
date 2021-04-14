@@ -1,0 +1,64 @@
+// Always put mixins, variables, or extended classes at the top of your file.
+
+
+// Importing a partial
+@import "variables";
+
+// SASS Variable (can be used throughout the file. Remember to creat variables at the top of the file
+// $color1: #4cbb17;
+
+// Example of variable in a CSS file
+// --color1: #4cbb17;
+// background: var(--color1);
+
+
+// Mixin
+// Mixin allows for multiple styles to be created and used throughout the file.
+// @mixin flex {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;  
+// }
+
+// @mixin flex ($position){
+//     display: flex;
+//     justify-content: $position;
+//     align-items: $position;  
+//}
+
+.first{
+    background: blue;
+    font-weight: bold;
+    // NESTING 
+    h1{
+        color: white;
+        //Changes the text color to the h1 when hovered over
+        &:hover {
+            color: $color1;
+        }
+    }
+    p{
+        color: $color1;
+        border: 3px solid $color1;
+    }
+}
+
+.second {
+    // using a mixin that does not have a parameter
+    // @include flex;
+
+    //Using a mixin that does have a parameter(s)
+    @include flex(flex-end);
+    h1 {
+        font-weight: bold;
+        // @include colors;
+
+        // Using an extendable class
+        @extend %colors;
+    }
+    h2 {
+        font-style: italic;
+        // @include colors;
+        @extend %colors;
+    }
+}

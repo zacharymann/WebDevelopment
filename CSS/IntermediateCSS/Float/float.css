@@ -1,0 +1,9 @@
+/* FLOAT */
+
+img {
+    width: 100px;
+
+    /* Float takes the element out of the normal document.
+    Also removes the "mystery space" */
+    float: right;
+}

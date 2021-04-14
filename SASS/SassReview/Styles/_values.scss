@@ -1,0 +1,18 @@
+// This is a PARTIAL file
+
+// VARIABLES
+$color1: #d92121;
+
+// MIXIN
+@mixin flex ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// EXTENDABLE CLASS
+
+%colors {
+    color: #ed1c24;
+    border: 3px solid #8fd129;
+}

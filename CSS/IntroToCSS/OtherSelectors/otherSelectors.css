@@ -1,0 +1,111 @@
+/* STAR SELECTOR */
+/* Sets the style for every element in the HTML file */
+
+*{
+    border-left: 3px solid blueviolet;
+}
+
+/* MULTIPLE SELECTORS */
+/* Sets the style for multiple selectors at once */
+/* This is helpful to condense the amount of lines in a css file */
+
+h1, h3 {
+    background: hotpink;
+}
+
+/* Same as this below */
+
+/* h1{
+    background: hotpink;
+}
+
+h3{
+    background: hotpink;
+} */
+
+/* ATTRIBUTE */
+/* Sets the style for a selector that have a certain attribute value */
+a[href="https://www.rottentomatoes.com/top-tv"] {
+    border-top: 4px solid #ff0022;
+}
+
+/* DECENDANT SELECTOR */
+/* Sets style for selector (Last specified selector) nested in another selector (1st specificed selectors). Even if there are nested more than one level */
+
+div h2{
+    color: red;
+}
+ol ul li{
+    border-right: 6px dotted #11f;
+}
+
+/* SPECIFIC ELEMENT WITH A CLASS */
+/* Sets the style for only a specific element that has a class */
+/* Class must be applied to more than one element type for this to be useful */
+li.yellow {
+    background: yellow;
+}
+
+/* GENERAL SIBLING SELECTOR */
+/* Sets the style for all the following elements (ol in this case) that are siblings of the specified element (H3 in this case) */
+/* h3 ~ ol{
+    border-bottom: 6px solid green;
+} */
+
+
+/* How to remove the bottom border under the Third ol that immediately follows an h3 */
+/* h3 ~ ol:not(h3 + ol:nth-of-type(3)) {
+  border-bottom: 6px solid green;
+} */
+/* ADJACENT SIBLING SELECTOR */
+/* Same as the General Sibling Selector. However, it will only affect the element immediately following the specified element */
+h3 + ol {
+    border-bottom: 6px solid black;
+  }
+  /* How to remove the bottom border under the Third ol that immediately follows an h3 */
+  /* h3 + ol:not(h3 + ol:nth-of-type(3)) {
+    border-bottom: 6px solid black;
+  } */
+  /* NTH OF TYPE */
+  /* Styles every element that is a specified nth child (Number your provide) of a specified type (Selector you provide) of it's parent */
+  /* So in this case 3rd li is styled including "Amazon Prime" because it is the 3rd li in the ordered list in the Other section */
+  li:nth-of-type(3) {
+    border-bottom: 4px solid greenyellow;
+  }
+  /* Nth of type can also be used to apply a styple to multiple elements by using odd, even, or a number followed by n (Ex: 3n) */
+
+  /* li:nth-of-type(even) {
+    border-bottom: 4px solid greenyellow;} */
+  
+  /* li:nth-of-type(3n) {
+      border-bottom: 4px solid greenyellow;} */
+  
+  /* How to remove the bottom border under the Third li that is a direct child of the Third ol */
+  /* li:nth-of-type(3):not(ol:nth-of-type(3) > li:nth-of-type(3)) {
+    border-bottom: 4px solid greenyellow;
+  } */
+
+  /* NTH CHILD */
+  /* Styles all elements that are the nth child (number you provided) of the parent. Regardless of the typre of the parent element*/
+
+  ul:nth-child(2) {
+      background: orange;
+  }
+  /* a:last-child {
+      background: orange;
+} */
+
+/* CHILD SELECTOR */
+/* Style all elements )Last selector you provide) that are children of a sepecified selector (1st selectors) you provide */
+div > h2{
+    color: blue;
+}
+
+/* PSUEDO CLASSES */
+
+h2:hover {
+    background: green;
+}
+input:focus{
+    
+}

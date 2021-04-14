@@ -1,0 +1,114 @@
+/* FLEXBOX */
+/* Flexbox allows for a flexablea and responsive layout to be created without having to use float or position */
+
+div div {
+    width: 200px;
+    margin: 10px;
+    border: 3px solid black;
+    font-size: 25px;
+  }
+  
+  .container {
+    background: #999;
+    /* display: flex; creats a new flexbox container */
+    /* Flexbox always has a main axis and cross axis. Main axis is horizontal and cross axis is vertical by default when using flexbox (Ex: display: flex;) */
+    display: flex;
+
+    /* Justify Content */
+    /* Justify Content will determine how the elements are set along the main axis (horizontal axis in this case) */
+
+    /* flex-start is the default justify content value */
+    /* justify-content: flex-start; */
+
+    /* flex-end positions the flexbox items at the end of the main axis (All the way to the right in out case) */
+    /* justify-content: flex-end; */
+
+    /* center positions the flexbox items in the center of the main axis (Horizontal axis in our case) */
+    /* justify-content: center; */
+
+    /* space-between positions the items with even distribution of space between them */
+    /* justify-content: space-between; */
+
+    /* space-around positions the items with even distribution of left and right margin on each one */
+    /* justify-content: space-around; */
+
+    /* ALIGN ITEMS */
+    /* Align items will determine how the elements are set along a cross axis (vertical axis in this case) */
+    /* Stretch is the default value for Align Items (Since we have a min-height values set on the divs they stretch to fill the vertical space */
+    /* align-items: stretch; */
+    /* Center will remove the default stretch value and center each item along the cross axis (vertical axis in this case) */
+    /* align-items: center; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+
+    /* FLEX WRAP */
+    /* Flex wrap wraps items that cannot fit on the current line, onto the next line */
+    /* flex-wrap: wrap; */
+
+    /* ALIGN CONTENT */
+    /* Align Content is used like "align-items" for elements that are being wrapped onto another line */
+    /* align-content: center; */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* height: 750px; */
+
+    /* FLEX DIRECTION */
+    /* flex direction sets the flex items in a row or a column (the default is a row) */
+    /* flex-direction: column changes flex items into a column instead of a row */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: flex-end; */
+  }
+  
+  .red {
+    background: red;
+    min-height: 100px;
+
+    /* Flex Grow */
+    /* Flex grow determines if a flexbox will grow and how much it will grow. 0 is the default value */
+    /* flex-grow: 2; */
+
+    /* FLEX SHRINK */
+    /* Flex Shrink determines if a flexbox item will shrink and how much it will shrink. 1 is the default value */
+    /* flex-shrink: 1; */
+    /* item does not shrink; */
+    /* Item shrinks twice as fast as other items */
+    /* flex-shrink: 1; */
+
+    /* Flex Basis */
+    /* Flex basis determines where the flex grow/shrink properties start from. Dafault is auto, which sets the length of the flexbox item to its predetermined length. Flex basis is usually set with a length in pixels */
+
+    /* FLexbox Shorthand Property */
+    /* Flex grow, flex shrink, flex basis */
+    /* Default values are flex: 0 1 auto */
+    /* flex: 1 1 auto; */
+    
+    flex-basis: 400px;
+    /* flex-shrink: 2; */
+    /* flex-grow: 2; */
+
+    /* ORDER */
+    /* Order changes the order of the flexbox items in their container */
+    /* order: 2; */
+
+    /* ALIGN SELF */
+    /* Align seld allows you to set the align items property on a single flexbox item */
+    /* align-self: center; */
+
+  }
+  .green {
+    background: green;
+    min-height: 200px;
+
+    /* flex-grow: 1; */
+    /* flex-shrink: 2; */
+    /* order: 3; */
+    /* align-self: flex-end; */
+  }
+  .blue {
+    background: blue;
+    min-height: 300px;
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+    /* order: 1 */
+  }

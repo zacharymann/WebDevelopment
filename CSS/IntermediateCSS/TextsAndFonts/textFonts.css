@@ -1,0 +1,84 @@
+/* FONT FAMILY */
+/* Font family properties set the font for the text */
+/* The fonts that come after the Impact font are there in case the webpage is pulled up in a browser that does not support the "Impace" font. Also '' or "" are neccesary for fonts with more than one word */
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* FONT SIZE */
+/* Using px will set the elements font size to a fixes pixel size */
+p {
+    font size: 25px ;
+}
+
+/* em determines the font size based on the font size of the parent element (p element in this case) */
+/* Font size will be 100px (25px x 4) */
+#span-one {
+    font-size: 4em;
+}
+
+/* The 2nd paragraph is only 64px because it is inheriting the font size from it's parent element (AKA the body element) which is 16px */
+
+#p-two {
+    font-size: 4em;
+}
+
+/* Even on an h1 (largest Heading) using an em will set the size off of the font size of it's parent element (Body element in this case)*/
+h1{
+    font-size: 1em;
+}
+
+/* This sets the root font size for all elements in the html file */
+/* This is used a lot at the start of a css file so that em can be used to set the size for different elements in the HTML file */
+/* Notice this does not affect the font size in the 1st paragraph */
+html {
+    font-size: 20px;
+}
+
+/* rem determines the font size based on the font size for the element in the HTML file (AKA the HTML Element) */
+#span-two {
+    font-size: 4rem;
+}
+
+/* FONT WEIGHT */
+/* Font weight determines the boldness of a text */
+p {
+    font-weight: bold ;
+}
+
+/* FONT STYLE */
+/* Allows to make a font italic */
+p {
+    font-style: italic;
+}
+
+/* LINE HEIGHT */
+/* Determines spacing between lines */
+p {
+    line-height: 1.5;
+}
+
+/* LETTER SPACING */
+/* Determines the spacing between letters */
+p {
+    letter-spacing: 10px;
+}
+
+/* TEXT ALIGN */
+/* Determines the Alignment of text */
+h1 {    
+    /* text-align: center; */
+    text-align: right;
+}
+/* TEXT DECORATION */
+/* Adds a decoration to text */
+span {
+    /* text-decoration: line-through; */
+    text-decoration: underline;
+}
+
+/* TEXT TRANSFORMATION */
+/*  Determines the capitalization of a text*/
+h6{
+    text-transform: uppercase;
+}
